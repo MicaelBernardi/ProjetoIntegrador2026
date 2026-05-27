@@ -18,7 +18,6 @@ func iniciar_abertura():
 		_animated_sprite.play("abrir")
 		player.pode_se_mover = false
 
-# Sinais da Area2D (Conecte-os no Inspetor do Godot)
 func _on_area_2d_body_entered(body):
 	if body.is_in_group("player"):
 		pode_interagir = true
